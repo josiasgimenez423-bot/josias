@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AirMax — Aire Acondicionado Profesional</title>
+
+  <!-- Google Fonts: Syne (display) + Outfit (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6 (íconos) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║             NAVBAR                   ║
+       ╚══════════════════════════════════════╝ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+
+      <!-- Logo -->
+      <a href="#inicio" class="navbar__logo">
+        <span class="logo-icon"><i class="fa-solid fa-snowflake"></i></span>
+        <span class="logo-text">Air<strong>Max</strong></span>
+      </a>
+
+      <!-- Links de navegación (desktop) -->
+      <nav class="navbar__nav" id="navMenu">
+        <a href="#inicio"     class="nav-link">Inicio</a>
+        <a href="#servicios"  class="nav-link">Servicios</a>
+        <a href="#nosotros"   class="nav-link">Sobre nosotros</a>
+        <a href="#testimonios" class="nav-link">Testimonios</a>
+        <a href="#contacto"   class="nav-link">Contacto</a>
+        <a href="#contacto"   class="btn btn--sm">Solicitar servicio</a>
+      </nav>
+
+      <!-- Botón hamburguesa (mobile) -->
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║                HERO                  ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="hero" id="inicio">
+
+    <!-- Partículas decorativas de fondo -->
+    <div class="hero__particles" aria-hidden="true">
+      <span class="particle particle--1"><i class="fa-solid fa-snowflake"></i></span>
+      <span class="particle particle--2"><i class="fa-solid fa-snowflake"></i></span>
+      <span class="particle particle--3"><i class="fa-solid fa-snowflake"></i></span>
+      <span class="particle particle--4"><i class="fa-solid fa-wind"></i></span>
+      <span class="particle particle--5"><i class="fa-solid fa-snowflake"></i></span>
+    </div>
+
+    <div class="container hero__content">
+      <div class="hero__text" data-animate="fade-up">
+        <span class="hero__badge">
+          <i class="fa-solid fa-certificate"></i> Servicio técnico certificado
+        </span>
+        <h1 class="hero__title">
+          Tu confort es<br/>
+          <span class="hero__title--accent">nuestra prioridad</span>
+        </h1>
+        <p class="hero__desc">
+          Instalación, mantenimiento y reparación de aire acondicionado con más de
+          10 años de experiencia. Respondemos en menos de 24 horas.
+        </p>
+        <div class="hero__actions">
+          <a href="#contacto" class="btn btn--primary btn--lg">
+            <i class="fa-solid fa-phone-volume"></i> Solicitar servicio
+          </a>
+          <a href="#servicios" class="btn btn--outline btn--lg">
+            Ver servicios
+          </a>
+        </div>
+        <!-- Métricas rápidas -->
+        <div class="hero__stats">
+          <div class="stat">
+            <strong>+2 400</strong>
+            <span>clientes atendidos</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <strong>10+ años</strong>
+            <span>de experiencia</span>
+          </div>
+          <div class="stat__divider"></div>
+          <div class="stat">
+            <strong>24 h</strong>
+            <span>tiempo de respuesta</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen hero -->
+      <div class="hero__image" data-animate="fade-left">
+        <div class="hero__img-frame">
+          <img
+            src="https://images.unsplash.com/photo-1631545806609-3e8e7e7e7e7e?w=680&q=80&auto=format&fit=crop"
+            onerror="this.src='https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=680&q=80&auto=format&fit=crop'"
+            alt="Técnico instalando aire acondicionado"
+            loading="eager"
+          />
+          <!-- Badge flotante -->
+          <div class="hero__float-badge">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Garantía oficial<br/><b>12 meses</b></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ola decorativa inferior -->
+    <div class="hero__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#f0f6ff"/>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║   BANDA DE MARCAS / CONFIANZA        ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="brands">
+    <div class="container">
+      <p class="brands__label">Trabajamos con las mejores marcas</p>
+      <div class="brands__logos">
+        <span>Daikin</span>
+        <span>Carrier</span>
+        <span>Fujitsu</span>
+        <span>Samsung</span>
+        <span>LG</span>
+        <span>Inverter Pro</span>
+        <span>Trane</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║             SERVICIOS                ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="services" id="servicios">
+    <div class="container">
+
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">¿Qué hacemos?</span>
+        <h2 class="section-title">Nuestros servicios</h2>
+        <p class="section-sub">
+          Soluciones completas para que tu equipo funcione siempre al máximo rendimiento.
+        </p>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- Tarjeta 1: Instalación -->
+        <article class="service-card" data-animate="fade-up" data-delay="0">
+          <div class="service-card__icon service-card__icon--blue">
+            <i class="fa-solid fa-wrench"></i>
+          </div>
+          <h3 class="service-card__title">Instalación</h3>
+          <p class="service-card__desc">
+            Instalamos equipos split, multi-split y cassette de todas las marcas.
+            Realizamos el cableado eléctrico, colocación de soportes y carga de gas
+            bajo normas técnicas vigentes.
+          </p>
+          <ul class="service-card__list">
+            <li><i class="fa-solid fa-check"></i> Equipos residenciales y comerciales</li>
+            <li><i class="fa-solid fa-check"></i> Certificado de instalación incluido</li>
+            <li><i class="fa-solid fa-check"></i> Puesta en marcha y configuración</li>
+          </ul>
+          <a href="#contacto" class="service-card__link">
+            Consultar precio <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </article>
+
+        <!-- Tarjeta 2: Mantenimiento (destacado) -->
+        <article class="service-card service-card--featured" data-animate="fade-up" data-delay="100">
+          <span class="service-card__badge">Más solicitado</span>
+          <div class="service-card__icon service-card__icon--white">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h3 class="service-card__title">Mantenimiento</h3>
+          <p class="service-card__desc">
+            Programa el mantenimiento preventivo de tu equipo y evitá averías
+            costosas. Limpiamos filtros, revisamos presiones y controlamos el
+            consumo eléctrico.
+          </p>
+          <ul class="service-card__list">
+            <li><i class="fa-solid fa-check"></i> Limpieza profunda de filtros</li>
+            <li><i class="fa-solid fa-check"></i> Control de refrigerante</li>
+            <li><i class="fa-solid fa-check"></i> Informe técnico detallado</li>
+          </ul>
+          <a href="#contacto" class="service-card__link">
+            Consultar precio <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </article>
+
+        <!-- Tarjeta 3: Reparación -->
+        <article class="service-card" data-animate="fade-up" data-delay="200">
+          <div class="service-card__icon service-card__icon--blue">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <h3 class="service-card__title">Reparación</h3>
+          <p class="service-card__desc">
+            Diagnosticamos y reparamos fallas en equipos de cualquier marca y
+            antigüedad: problemas de frío, pérdidas de gas, ruidos extraños,
+            fallas eléctricas y más.
+          </p>
+          <ul class="service-card__list">
+            <li><i class="fa-solid fa-check"></i> Diagnóstico sin cargo</li>
+            <li><i class="fa-solid fa-check"></i> Repuestos originales</li>
+            <li><i class="fa-solid fa-check"></i> Garantía de reparación 90 días</li>
+          </ul>
+          <a href="#contacto" class="service-card__link">
+            Consultar precio <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║           SOBRE NOSOTROS             ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="about" id="nosotros">
+    <div class="container about__inner">
+
+      <!-- Imagen -->
+      <div class="about__image" data-animate="fade-right">
+        <div class="about__img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=680&q=80&auto=format&fit=crop"
+            alt="Equipo técnico AirMax"
+            loading="lazy"
+          />
+          <div class="about__img-badge">
+            <strong>+2 400</strong>
+            <span>equipos instalados</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div class="about__content" data-animate="fade-left">
+        <span class="section-tag">¿Quiénes somos?</span>
+        <h2 class="section-title">Expertos en climatización<br/>desde 2014</h2>
+        <p>
+          En <strong>AirMax</strong> somos un equipo de técnicos certificados apasionados
+          por la climatización. Nacimos para brindar un servicio diferente: rápido,
+          honesto y con garantía real.
+        </p>
+        <p>
+          Trabajamos en hogares, oficinas, locales comerciales e industrias. Contamos
+          con habilitación municipal, seguros de responsabilidad civil y capacitación
+          continua en nuevas tecnologías como el inverter y los sistemas de frío-calor.
+        </p>
+        <div class="about__values">
+          <div class="value">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <strong>Respuesta en 24 h</strong>
+              <span>Te llamamos y coordinamos una visita rápida.</span>
+            </div>
+          </div>
+          <div class="value">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <strong>Garantía 12 meses</strong>
+              <span>En instalaciones y reparaciones realizadas por nosotros.</span>
+            </div>
+          </div>
+          <div class="value">
+            <i class="fa-solid fa-star"></i>
+            <div>
+              <strong>Técnicos certificados</strong>
+              <span>Personal habilitado y capacitado por las marcas líderes.</span>
+            </div>
+          </div>
+        </div>
+        <a href="#contacto" class="btn btn--primary">
+          <i class="fa-solid fa-calendar-check"></i> Sacar turno
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║            TESTIMONIOS               ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="testimonials" id="testimonios">
+    <div class="container">
+
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-tag">Qué dicen nuestros clientes</span>
+        <h2 class="section-title">Más de 2 400 familias<br/>ya confían en nosotros</h2>
+      </div>
+
+      <div class="testimonials__grid">
+
+        <article class="testi-card" data-animate="fade-up" data-delay="0">
+          <div class="testi-card__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-card__text">
+            "Llamé un viernes a la tarde y el técnico vino el sábado por la mañana.
+            Diagnosticó el problema en minutos y lo dejó funcionando perfecto. 
+            Precio muy razonable y trato excelente."
+          </p>
+          <div class="testi-card__author">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Mariana G."
+              loading="lazy"
+            />
+            <div>
+              <strong>Mariana G.</strong>
+              <span>Propietaria, Buenos Aires</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testi-card testi-card--featured" data-animate="fade-up" data-delay="100">
+          <div class="testi-card__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-card__text">
+            "Instalaron 4 equipos en nuestra oficina en un solo día. Todo ordenado,
+            sin suciedad y con el cableado perfectamente prolijo. 
+            Tres meses después todo funciona de maravilla. ¡100% recomendable!"
+          </p>
+          <div class="testi-card__author">
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="Ricardo M."
+              loading="lazy"
+            />
+            <div>
+              <strong>Ricardo M.</strong>
+              <span>Gerente, Pyme tecnológica</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testi-card" data-animate="fade-up" data-delay="200">
+          <div class="testi-card__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="testi-card__text">
+            "El mantenimiento anual que contrato con AirMax me ahorra muchísimo.
+            Mis equipos duran más y consumen menos luz. El servicio es puntual
+            y el informe que entregan es muy detallado."
+          </p>
+          <div class="testi-card__author">
+            <img
+              src="https://randomuser.me/api/portraits/women/68.jpg"
+              alt="Lucía P."
+              loading="lazy"
+            />
+            <div>
+              <strong>Lucía P.</strong>
+              <span>Administradora de edificio</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testi-card" data-animate="fade-up" data-delay="300">
+          <div class="testi-card__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="testi-card__text">
+            "El compresor de mi equipo se rompió en pleno verano. AirMax lo
+            reparó en 48 horas con repuesto original y a un precio mucho
+            menor que los que me cotizaron en otras empresas."
+          </p>
+          <div class="testi-card__author">
+            <img
+              src="https://randomuser.me/api/portraits/men/71.jpg"
+              alt="Carlos V."
+              loading="lazy"
+            />
+            <div>
+              <strong>Carlos V.</strong>
+              <span>Comerciante, Rosario</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║          FORMULARIO CONTACTO         ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="contact" id="contacto">
+    <div class="container contact__inner">
+
+      <!-- Info lateral -->
+      <div class="contact__info" data-animate="fade-right">
+        <span class="section-tag">Contacto</span>
+        <h2 class="section-title">¿Necesitás un presupuesto?</h2>
+        <p>Completá el formulario o escribinos directamente. Te respondemos en menos de 24 horas.</p>
+
+        <div class="contact__details">
+          <div class="contact-item">
+            <span class="contact-item__icon"><i class="fa-solid fa-phone"></i></span>
+            <div>
+              <strong>Teléfono / WhatsApp</strong>
+              <a href="tel:+541112345678">+54 11 1234-5678</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item__icon"><i class="fa-solid fa-envelope"></i></span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:hola@airmax.com.ar">hola@airmax.com.ar</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item__icon"><i class="fa-solid fa-location-dot"></i></span>
+            <div>
+              <strong>Zona de servicio</strong>
+              <span>CABA y GBA Norte, Oeste y Sur</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-item__icon"><i class="fa-solid fa-clock"></i></span>
+            <div>
+              <strong>Horario de atención</strong>
+              <span>Lun – Sáb: 8:00 – 20:00 hs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="contact__form-wrap" data-animate="fade-left">
+        <form class="contact-form" id="contactForm" novalidate>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Juan Pérez"
+                autocomplete="name"
+              />
+              <span class="form-error" id="err-nombre"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="juan@email.com"
+                autocomplete="email"
+              />
+              <span class="form-error" id="err-email"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono / WhatsApp</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="+54 11 ..."
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio">
+              <option value="">Seleccioná una opción...</option>
+              <option value="instalacion">Instalación</option>
+              <option value="mantenimiento">Mantenimiento</option>
+              <option value="reparacion">Reparación</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Describí brevemente qué necesitás..."
+            ></textarea>
+            <span class="form-error" id="err-mensaje"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Enviar mensaje</span>
+          </button>
+
+          <!-- Mensaje de éxito (oculto por defecto) -->
+          <div class="form-success" id="formSuccess" aria-live="polite">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <strong>¡Mensaje enviado!</strong>
+              <p>Gracias por contactarnos. Te responderemos en menos de 24 horas.</p>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║               FOOTER                 ║
+       ╚══════════════════════════════════════╝ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <!-- Col 1: Brand -->
+      <div class="footer__col footer__brand">
+        <a href="#inicio" class="navbar__logo navbar__logo--footer">
+          <span class="logo-icon"><i class="fa-solid fa-snowflake"></i></span>
+          <span class="logo-text">Air<strong>Max</strong></span>
+        </a>
+        <p>Servicio técnico profesional de aire acondicionado. Instalación, mantenimiento y reparación con garantía real.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Servicios -->
+      <div class="footer__col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Instalación de aires</a></li>
+          <li><a href="#servicios">Mantenimiento preventivo</a></li>
+          <li><a href="#servicios">Reparación de equipos</a></li>
+          <li><a href="#contacto">Presupuesto gratis</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Empresa -->
+      <div class="footer__col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#nosotros">Sobre nosotros</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contacto -->
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <ul class="footer__contact">
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:+541112345678">+54 11 1234-5678</a></li>
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:hola@airmax.com.ar">hola@airmax.com.ar</a></li>
+          <li><i class="fa-solid fa-location-dot"></i> CABA y GBA</li>
+          <li><i class="fa-solid fa-clock"></i> Lun–Sáb 8–20 hs</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2025 AirMax Climatización. Todos los derechos reservados.</p>
+        <p>Diseño y desarrollo web con ❄️ por AirMax Team</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║       BOTÓN FLOTANTE WHATSAPP        ║
+       ╚══════════════════════════════════════╝ -->
+  <a
+    href="https://wa.me/541112345678?text=Hola%20AirMax%2C%20quisiera%20consultar%20sobre%20sus%20servicios"
+    class="whatsapp-btn"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-btn__tooltip">¡Escribinos!</span>
+  </a>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║          BOTÓN VOLVER ARRIBA         ║
+       ╚══════════════════════════════════════╝ -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
