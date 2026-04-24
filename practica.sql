@@ -9,13 +9,13 @@ CREATE TABLE aires_acondicionados (
     fecha_instalacion DATE,
     ubicacion VARCHAR(150), -- Ej: Oficina, Casa, Local
     cliente VARCHAR(100),
-    activo BOOLEAN DEFAULT TRUE
+   
 );
 
 INSERT INTO aires_acondicionados (
     marca, modelo, tipo, capacidad_btu, eficiencia_energetica,
-    refrigerante, fecha_instalacion, ubicacion, cliente, activo
+    refrigerante, fecha_instalacion, ubicacion, cliente,
 ) VALUES (
     'Samsung', 'AR12TXHQASIN', 'Split', 12000, 'A++',
-    'R410A', '2025-03-15', 'Oficina', 'Carlos Gómez', TRUE
+    'R410A', '2025-03-15', 'Oficina', 'Carlos Gómez', 
 );
